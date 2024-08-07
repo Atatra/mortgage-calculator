@@ -70,14 +70,16 @@ Users should be able to:
 
 - I only started Mobile-first workflow halfway through the project, I should have done it earlier.
 
-- I probably should use CSS modules, it would prevent copy pasting the same properties too many times, and make the code more readable since my TailwindCSS classes are not organized at all (no proper ordering on attributes).
+- To correctly format and show the amount's input (1000 -> 1,000) I had to change the input type from `number` to `text`. Not only does it pose an accessibilty issue on mobile, but it also made it possible to write characters. For desktop I used an event handler to allow user to type number, 'CTRL/CMD+A', 'Enter/Backward'. But for mobile I couldn't do anything. Fortunately, there is still Zod's validation so user can't submit NaN things. So next time I'll probably use a dedicated library like CleaveJs, or at least organize better to make it easier to code the intended behavior.
+
+- I probably should use CSS modules, it would prevent copy pasting the same properties too many times, and would make the code more readable since my TailwindCSS classes are not organized at all (no proper ordering on attributes).
 
 - I had trouble with changing the color of the Radio Button, it seems like it's not possible since it is browser-dependent. So I had to replace it with two divs painfully positioned with `position: relative` and `position: absolute`. Which makes it not fully responsive, the inner circle might be misplaced based on the user's browser and screen settings. Next time I'll probably use two images instead (checked, not_checked).
 
 - I need to find a way to crop the content when resizing the page from the left. Right now the content wraps vertically until it overflows its respective container.
 
 - There is also an issue on low width screen (<1100px), the result's background doesn't fit the remaining height (since I put a fixed height).
-  I tried, but I couldn't make it grow to fit the whole screen.
+  I tried, but I couldn't make it grow to fit the whole screen. So the `<main>`'s background is visible.
 
   ![](./screenshots/issue.png)
 
