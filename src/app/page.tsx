@@ -59,7 +59,7 @@ export default function Home() {
 
                       <hr className="border-[#324855] my-5" />
 
-                      <h2 className="text-slate-300 text-sm mb-2">Today you'll repay over the term</h2>
+                      <h2 className="text-slate-300 text-sm mb-2">Total you'll repay over the term</h2>
                       <span className="text-white font-bold text-lg">£{readable(result.total!)}</span>
 
                     </div>
