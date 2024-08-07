@@ -78,7 +78,7 @@ Users should be able to:
 
 - I need to find a way to crop the content when resizing the page from the left. Right now the content wraps vertically until it overflows its respective container.
 
-- There is also an issue on low width screen (<1100px), the result's background doesn't fit the remaining height (since I put a fixed height).
+- There is also an issue on "low" width screen (<1100px), the result's background doesn't fit the remaining height (since I put a fixed height).
   I tried, but I couldn't make it grow to fit the whole screen. So the `<main>`'s background is visible.
 
   ![](./screenshots/issue.png)
