@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.relative:focus-within .bg-slate-100 {
+  background-color: hsl(61, 70%, 52%);
+}
+
+.radio {
+  border-width: 1px;
+  --tw-text-opacity: 1;
+  color: hsl(200 24% 40% / var(--tw-text-opacity));
+  border-radius: 0.275rem;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.radio:hover {
+  border-color: hsl(61, 70%, 52%);
+}
+
+.radio:has(input[type="radio"]:checked) {
+  background-color: hsla(61, 100%, 84%, 0.178);
+  border-color: hsl(61, 70%, 52%);
+}
+
+.inner-circle {
+  appearance: none;
+}
