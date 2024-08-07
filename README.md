@@ -70,7 +70,7 @@ Users should be able to:
 
 - I only started Mobile-first workflow halfway through the project, I should have done it earlier.
 
-- To correctly format and show the amount's input (1000 -> 1,000) I had to change the input type from `number` to `text`. Not only does it pose an accessibilty issue on mobile, but it also made it possible to write characters. For desktop I used an event handler to allow user to type number, 'CTRL/CMD+A', 'Enter/Backward'. But for mobile I couldn't do anything. Fortunately, there is still Zod's validation so user can't submit NaN things. So next time I'll probably use a dedicated library like CleaveJs, or at least organize better to make it easier to code the intended behavior.
+- To correctly format and show the amount's input (1000 -> 1,000) I had to change the input type from `number` to `text`. Not only does it pose an accessibilty issue on mobile, but it also made it possible to write characters. For desktop I used an event handler to allow user to type number, 'CTRL/CMD+A', 'Enter/Backward' only. But for mobile I couldn't prevent side-effects. Fortunately, there is still Zod's validation so user can't submit NaN things. So next time I'll probably use a dedicated library like CleaveJs, or at least organize better to make it easier to code the intended behavior.
 
 - I probably should use CSS modules, it would prevent copy pasting the same properties too many times, and would make the code more readable since my TailwindCSS classes are not organized at all (no proper ordering on attributes).
 
