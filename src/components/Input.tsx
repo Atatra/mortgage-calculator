@@ -38,7 +38,7 @@ const Input = ({ id, label, symbol, left, styles, step = "1", error, exception =
 	return (
 		<div className="flex flex-col w-full text-slate-700 text-[0.875rem]" style={{ ...styles }}>
 
-			<label className="mb-2 text-slate-500" htmlFor={label}>{label}</label>
+			<label className="mb-2 text-slate-500" htmlFor={id}>{label}</label>
 			<div className="relative">
 				<input type={exception ? "text" : "number"} step={step} id={id} name={id} min={0} //required
 					className={`border-[1px] rounded-[4px] w-full px-3 py-2 hover:border-slate-900
