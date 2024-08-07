@@ -45,7 +45,6 @@ Users should be able to:
 
 ### Built with
 
-- Mobile-first workflow
 - Semantic HTML5 markup
 - CSS custom properties & TailwindCSS
 - Flexbox
@@ -69,16 +68,23 @@ Users should be able to:
 
 ### Continued development
 
+- I only started Mobile-first workflow halfway through the project, I should have done it earlier.
+
 - I probably should use CSS modules, it would prevent copy pasting the same properties too many times, and make the code more readable since my TailwindCSS classes are not organized at all (no proper ordering on attributes).
 
 - I had trouble with changing the color of the Radio Button, it seems like it's not possible since it is browser-dependent. So I had to replace it with two divs painfully positioned with `position: relative` and `position: absolute`. Which makes it not fully responsive, the inner circle might be misplaced based on the user's browser and screen settings. Next time I'll probably use two images instead (checked, not_checked).
+
+- I need to find a way to crop the content when resizing the page from the left. Right now the content wraps vertically until it overflows its respective container.
+
+- There is also an issue on low width screen (<1100px), the result's background doesn't fit the remaining height (since I put a fixed height).
+  I tried, but I couldn't make it grow to fit the whole screen.
+
+  ![](./screenshots/issue.png)
 
 ### Useful resources
 
 - [MDN Web Docs](https://developer.mozilla.org/) - [Flexbox Froggy](https://flexboxfroggy.com/) - This helped me for semantic HTML, flexbox, and grid, because I don't know what I'm doing.
 - [Zod Docs](https://zod.dev/) - [Zod Integration](https://www.youtube.com/watch?v=9UCoVM6QhnU) - For the same reason as above.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
